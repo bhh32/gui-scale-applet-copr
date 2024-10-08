@@ -15,7 +15,7 @@ COMSIC Applet for Tailscale
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_bindir} $RPM_BUILD_ROOT%{_datadir}/applications/ %{_buildroot}%{_datadir}/icons/hicolor/scalable/apps/
+mkdir -p $RPM_BUILD_ROOT%{_bindir} $RPM_BUILD_ROOT%{_datadir}/applications/ $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/
 
 install -Dm755 %{name} %{buildroot}%{_bindir}
 install -Dm755 com.github.bhh32.GUIScaleApplet.desktop %{buildroot}%{_datadir}/applications/ 
