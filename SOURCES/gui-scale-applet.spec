@@ -27,9 +27,9 @@ cp tailscale-icon.png %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
 %{_datadir}/icons/hicolor/scalable/apps/tailscale-icon.png
 
 %changelog
-* Tues Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
+* Tue Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
 - Updated spec file to use the $RPM_BUILD_ROOT for install setup
-* Tues Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
+* Tue Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
 - Updated spec file to use _buildroot macro instead of variable
 * Mon Oct 07 2024 Bryan Hyland <bryan.hyland32@gmail.com>
 - Applet now has Tail Drop feature implemented
