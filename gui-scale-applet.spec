@@ -14,8 +14,8 @@ COMSIC Applet for Tailscale
 %autosetup
 
 %install
-rm -rf %{_buildroot}
-mkdir -p %{_buildroot}%{_bindir} %{_buildroot}%{_datadir}/applications/ %{_buildroot}%{_datadir}/icons/hicolor/scalable/apps/
+rm -rf $RPM_BUILD_ROOT
+mkdir -p $RPM_BUILD_ROOT%{_bindir} $RPM_BUILD_ROOT%{_datadir}/applications/ %{_buildroot}%{_datadir}/icons/hicolor/scalable/apps/
 
 install -Dm755 %{name} %{buildroot}%{_bindir}
 install -Dm755 com.github.bhh32.GUIScaleApplet.desktop %{buildroot}%{_datadir}/applications/ 
@@ -27,6 +27,8 @@ cp tailscale-icon.png %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
 %{_datadir}/icons/hicolor/scalable/apps/tailscale-icon.png
 
 %changelog
+* Tues Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
+- Updated spec file to use the $RPM_BUILD_ROOT for install setup
 * Tues Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
 - Updated spec file to use _buildroot macro instead of variable
 * Mon Oct 07 2024 Bryan Hyland <bryan.hyland32@gmail.com>
