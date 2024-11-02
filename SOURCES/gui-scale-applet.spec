@@ -13,6 +13,8 @@ COMSIC Applet for Tailscale
 %prep
 %autosetup
 
+%global debug_package %{nil}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_bindir} $RPM_BUILD_ROOT%{_datadir}/applications/ $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/
