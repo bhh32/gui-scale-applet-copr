@@ -1,5 +1,5 @@
 Name:           gui-scale-applet
-Version:        1.0.0
+Version:        1.0.1
 Release:        1%{?dist}
 Summary:        COSMIC Tailscale Applet
 
@@ -27,10 +27,10 @@ cp tailscale-icon.png %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
 %{_datadir}/icons/hicolor/scalable/apps/tailscale-icon.png
 
 %changelog
+* Sat Nov 2 2024 Bryan Hyland <bryan.hyland32@gmail.com>
+- Fixed bug with getting devices from updated Tailscale status command output.
 * Tue Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
-- Updated spec file to use the $RPM_BUILD_ROOT for install setup
-* Tue Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
-- Updated spec file to use _buildroot macro instead of variable
+- Updated spec file to use _buildroot macro instead of variable.
 * Mon Oct 07 2024 Bryan Hyland <bryan.hyland32@gmail.com>
 - Applet now has Tail Drop feature implemented
 * Thu Oct 03 2024 Bryan Hyland <bryan.hyland32@gmail.com>
