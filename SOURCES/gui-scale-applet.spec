@@ -1,5 +1,5 @@
 Name:           gui-scale-applet
-Version:        1.0.1
+Version:        2.0.0
 Release:        1%{?dist}
 Summary:        COSMIC Tailscale Applet
 
@@ -29,6 +29,8 @@ cp tailscale-icon.png %{buildroot}%{_datadir}/icons/hicolor/scalable/apps/
 %{_datadir}/icons/hicolor/scalable/apps/tailscale-icon.png
 
 %changelog
+* Sun Nov 3 2024 Bryan Hyland <bryan.hyland32@gmail.com>
+- Implemented TailDrop and exit node features. Updated version number to 2.0.0.
 * Sat Nov 2 2024 Bryan Hyland <bryan.hyland32@gmail.com>
 - Fixed bug with getting devices from updated Tailscale status command output.
 * Tue Oct 8 2024 Bryan Hyland <bryan.hyland32@gmail.com>
